@@ -13,9 +13,6 @@ coverage
 out/
 build
 
-# storybook
-documentation.json
-
 # misc
 .DS_Store
 *.pem
