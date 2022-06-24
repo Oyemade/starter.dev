@@ -1,0 +1,30 @@
+.loading {
+  border-radius: 0.375rem;
+  border-width: 2px;
+  &__section {
+    display: flex;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: .5;
+      }
+    };
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  &__wrapper {
+    display: flex;
+    margin: 0.375rem 0;
+    flex-direction: column;
+  }
+  &__item {
+    background-color: #D1D5DB;
+    border-radius: 0.375rem;
+  }
+}
